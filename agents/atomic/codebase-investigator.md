@@ -1,6 +1,28 @@
 ---
 name: codebase-investigator
-description: Use this agent when you need to thoroughly investigate and understand specific aspects of a codebase by reading and analyzing files. This agent performs comprehensive searches to gather all relevant information about code structure, implementations, patterns, and relationships. <example>Context: User needs to understand how authentication is implemented across the codebase.\nuser: "How is authentication handled in this application?"\nassistant: "I'll use the codebase-investigator agent to thoroughly examine the authentication implementation across the codebase."\n<commentary>Since the user is asking for information about how something works in the codebase, use the Task tool to launch the codebase-investigator agent to perform a comprehensive search and analysis.</commentary></example><example>Context: User wants to know about database schema and relationships.\nuser: "What database tables exist and how are they related?"\nassistant: "Let me investigate the database structure using the codebase-investigator agent."\n<commentary>The user needs information about the codebase structure, so use the codebase-investigator agent to explore and report findings.</commentary></example><example>Context: User needs to understand a specific feature's implementation.\nuser: "Explain how the payment processing feature works"\nassistant: "I'll launch the codebase-investigator agent to analyze the payment processing implementation throughout the codebase."\n<commentary>Since this requires understanding code across multiple files, use the codebase-investigator agent to investigate comprehensively.</commentary></example>
+description: |
+  Use this agent when you need to thoroughly investigate and understand specific aspects of a codebase by reading and analyzing files. This agent performs comprehensive searches to gather all relevant information about code structure, implementations, patterns, and relationships.
+
+  <example>
+  Context: User needs to understand how authentication is implemented across the codebase.
+  user: "How is authentication handled in this application?"
+  assistant: "I'll use the codebase-investigator agent to thoroughly examine the authentication implementation across the codebase."
+  <commentary>Since the user is asking for information about how something works in the codebase, use the Task tool to launch the codebase-investigator agent to perform a comprehensive search and analysis.</commentary>
+  </example>
+
+  <example>
+  Context: User wants to know about database schema and relationships.
+  user: "What database tables exist and how are they related?"
+  assistant: "Let me investigate the database structure using the codebase-investigator agent."
+  <commentary>The user needs information about the codebase structure, so use the codebase-investigator agent to explore and report findings.</commentary>
+  </example>
+
+  <example>
+  Context: User needs to understand a specific feature's implementation.
+  user: "Explain how the payment processing feature works"
+  assistant: "I'll launch the codebase-investigator agent to analyze the payment processing implementation throughout the codebase."
+  <commentary>Since this requires understanding code across multiple files, use the codebase-investigator agent to investigate comprehensively.</commentary>
+  </example>
 tools: Glob, Grep, Read
 model: sonnet
 color: cyan
